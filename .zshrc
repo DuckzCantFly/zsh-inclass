@@ -26,6 +26,8 @@ source ${ZPLUGINDIR}/zsh-inclass/general/source-all.plugin.zsh
 # source ${ZPLUGINDIR}/zsh-inclass/tab-complete/tab-complete.plugin.zsh
 # source ${ZPLUGINDIR}/zsh-inclass/alias/alias.plugin.zsh
 
+## prompt I use 
+# source ${ZPLUGINDIR}/zsh-inclass/prompt/prompt.plugin.zsh
 
 ## Powerline10k
 ### pretty prompt
