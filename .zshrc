@@ -20,7 +20,7 @@ if [ ! -d ${ZPLUGINDIR}/zsh-inclass ]; then
 	git clone --quiet "https://github.com/DuckzCantFly/zsh-inclass" "${ZPLUGINDIR}/zsh-inclass"
 fi
 
-source ${ZPLUGINDIR}/zsh-inclass/general/source-all.plugin.zsh
+source ${ZPLUGINDIR}/zsh-inclass/source-all.plugin.zsh
 # source ${ZPLUGINDIR}/zsh-inclass/general/general.plugin.zsh
 # source ${ZPLUGINDIR}/zsh-inclass/history/history.plugin.zsh
 # source ${ZPLUGINDIR}/zsh-inclass/tab-complete/tab-complete.plugin.zsh
