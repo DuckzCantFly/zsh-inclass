@@ -16,14 +16,26 @@ _zplug_load(){
 }
 
 # Manual load plugin example
-if [ ! -d ${ZPLUGINDIR}/zsh-dot-plugin ]; then
+if [ ! -d ${ZPLUGINDIR}/zsh-inclass ]; then
 	git clone --quiet "https://github.com/DuckzCantFly/zsh-inclass" "${ZPLUGINDIR}/zsh-inclass"
 fi
 
-source ${ZPLUGINDIR}/zsh-dot-plugin/general/general.plugin.zsh
-source ${ZPLUGINDIR}/zsh-dot-plugin/history/history.plugin.zsh
-source ${ZPLUGINDIR}/zsh-dot-plugin/tab-complete/tab-complete.plugin.zsh
-source ${ZPLUGINDIR}/zsh-dot-plugin/alias/alias.plugin.zsh
+source ${ZPLUGINDIR}/zsh-inclass/general/source-all.plugin.zsh
+# source ${ZPLUGINDIR}/zsh-inclass/general/general.plugin.zsh
+# source ${ZPLUGINDIR}/zsh-inclass/history/history.plugin.zsh
+# source ${ZPLUGINDIR}/zsh-inclass/tab-complete/tab-complete.plugin.zsh
+# source ${ZPLUGINDIR}/zsh-inclass/alias/alias.plugin.zsh
+
+
+## Powerline10k
+### pretty prompt
+if [ ! -d ${ZPLUGINDIR}/zsh-inclass ]; then
+        git clone --quiet "https://github.com/romkatv/powerlevel10k" "${ZPLUGINDIR}/powerlevel10k"
+fi
+
+source ${ZPLUGINDIR}/powerlevel10k/powerlevel10k.zsh-theme
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Function load plugins and configs
 
