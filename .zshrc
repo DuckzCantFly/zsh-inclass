@@ -31,7 +31,7 @@ source ${ZPLUGINDIR}/zsh-inclass/source-all.plugin.zsh
 
 ## Powerline10k
 ### pretty prompt
-if [ ! -d ${ZPLUGINDIR}/zsh-inclass ]; then
+if [ ! -d ${ZPLUGINDIR}/powerlevel10k ]; then
         git clone --quiet "https://github.com/romkatv/powerlevel10k" "${ZPLUGINDIR}/powerlevel10k"
 fi
 
