@@ -1,7 +1,7 @@
 ### Alias RC ###
 
 # Make SUDO not required for some system commands
-for command in mount umount sv pacman updatedb su shutdown poweroff reboot ; do
+for command in mount umount sv updatedb su shutdown poweroff reboot ; do
 	alias $command="sudo $command"
 done; unset command
 
@@ -39,7 +39,6 @@ alias \
 	la="ls -la" \
 	ll="ls -l" \
 	lg="la | grep" \
-	lsr="ls -la --tree --color=always | less"
 
 # Shorten up Commands
 alias \
@@ -51,10 +50,6 @@ alias \
 	v="$EDITOR" \
 	ipaddr="curl ifconfig.me" \
 	lipaddr='ip address | grep "inet " '\
-
-# Move Configs to $XDG_CONFIG_HOME
-alias \
-	tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf" \
 
 # Refresh
 alias \
