@@ -15,7 +15,7 @@ source ${ZPLUGINDIR}/zsh-inclass/aliasrc/aliasrc.plugin.zsh
 # enable corrections
 # set correction option
 ZSH_DOT_CONFIG_CORRECTION="verbose" # medium short
-source ${ZPLUGINDIR}/zsh-inclass/corrections/corrections.plugin.zsh
+source ${ZPLUGINDIR}/zsh-inclass/correction/correction.plugin.zsh
 
 # Load all Plugins
 source ${ZPLUGINDIR}/zsh-inclass/plugins/plugins.plugin.zsh
