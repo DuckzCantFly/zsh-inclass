@@ -20,8 +20,19 @@ source ${ZPLUGINDIR}/zsh-inclass/correction/correction.plugin.zsh
 # Load all Plugins
 source ${ZPLUGINDIR}/zsh-inclass/plugins/plugins.plugin.zsh
 
+# Powerline10k
+## pretty prompt
+if [ ! -d ${ZPLUGINDIR}/powerlevel10k ]; then
+	git clone --quiet "https://github.com/romkatv/powerlevel10k" "${ZPLUGINDIR}/powerlevel10k"
+fi
+
+# source ${ZPLUGINDIR}/powerlevel10k/powerlevel10k.zsh-theme
+
 # Prompt I use 
 # source ${ZPLUGINDIR}/zsh-inclass/prompt/prompt.plugin.zsh
 
 # Enable vi-mode with enhancements
 # source ${ZPLUGINDIR}/zsh-inclass/vi-mode/vi-mode.plugin.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
