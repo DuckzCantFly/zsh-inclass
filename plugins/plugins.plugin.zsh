@@ -1,4 +1,5 @@
 ### Plugins & Plugin Config ###
+# Load all the shell plugins #
 
 # Function load plugins and configs
 _zplug_load(){

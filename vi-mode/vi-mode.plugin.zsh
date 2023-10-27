@@ -1,4 +1,5 @@
 ### VI Mode setup ###
+# Set up vi mode for zsh #
 
 # Basics
 bindkey -v
@@ -19,6 +20,7 @@ function zle-keymap-select() {
 		esac
 } ; zle -N zle-keymap-select
 
+# Not really sure what this does but its important
 function zle-line-init() {
 		# initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
 		zle -K viins #

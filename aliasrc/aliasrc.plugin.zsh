@@ -1,4 +1,5 @@
 ### Alias RC ###
+# Set up all the shell alises #
 
 # Make SUDO not required for some system commands
 for command in mount umount sv updatedb su shutdown poweroff reboot ; do

@@ -1,4 +1,5 @@
 ### History Config ###
+# Setup how the shell history should work #
 
 # History in cache directory:
 

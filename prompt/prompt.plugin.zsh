@@ -1,4 +1,5 @@
 ### Prompt Settings ###
+# Set up all the basic fetuses for a prompt #
 
 # Set color variables
 function _prompt_colors {

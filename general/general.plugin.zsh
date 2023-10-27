@@ -1,4 +1,7 @@
 ### General Settings ###
+# All of the basic settings should go here. #
+
+# Load terminal colors.
 autoload -U colors && colors	2>/dev/null # Load colors
 
 # Basics
