@@ -6,20 +6,22 @@
 ZSH_CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/"
 HISTFILE=${ZSH_CACHE_DIR}/history
 
+## Make Sure History File exists
 if [ ! -e "${HISTFILE}" ] ; then
 	mkdir -p "${ZSH_CACHE_DIR}" 2> /dev/null \
 		&& touch ${HISTFILE}
 fi
 
-##History config
-HISTSIZE=10000000
-SAVEHIST=10000000
+# History config
+## How many commands should be saved in history?
+HISTSIZE=100000
+SAVEHIST=100000
 
+## History Options
 setopt BANG_HIST              # Treat the '!' character specially during expansion.
 setopt HIST_EXPIRE_DUPS_FIRST # Expire duplicate entries first when trimming history.
 setopt HIST_FIND_NO_DUPS      # Do not display a line previously found.
 setopt INC_APPEND_HISTORY     # Write to the history file immediately, not when the shell exits.
-
 setopt EXTENDED_HISTORY       # Write the history file in the ":start:elapsed;command" format.
 setopt HIST_REDUCE_BLANKS     # Remove superfluous blanks before recording entry.
 # setopt HIST_BEEP              # Beep when accessing nonexistent history.
