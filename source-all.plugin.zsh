@@ -29,7 +29,7 @@ fi
 # source ${ZPLUGINDIR}/powerlevel10k/powerlevel10k.zsh-theme
 
 # Prompt I use 
-# source ${ZPLUGINDIR}/zsh-inclass/prompt/prompt.plugin.zsh
+source ${ZPLUGINDIR}/zsh-inclass/prompt/prompt.plugin.zsh
 
 # Enable vi-mode with enhancements
 # source ${ZPLUGINDIR}/zsh-inclass/vi-mode/vi-mode.plugin.zsh
