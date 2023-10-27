@@ -1,10 +1,10 @@
 ### Plugins & Plugin Config ###
 
 _zplug_load(){
-	if [ ! -d ${ZPLUGINDIR}/$2 ]; then
-		git clone --quiet "https://github.com/$1/$2" "${ZPLUGINDIR}/$2"
+	if [ ! -d "${ZPLUGINDIR}/${2}" ]; then
+		git clone --quiet "https://github.com/${1}/${2}" "${ZPLUGINDIR}/${2}"
 	fi
-	source ${ZPLUGINDIR}/$2/*.plugin.zsh
+	source ${ZPLUGINDIR}/${2}/*.plugin.zsh
 }
 
 
@@ -13,10 +13,6 @@ _zplug_load(){
 ## Zsh-Completions
 ### get more tab completion options
 _zplug_load zsh-users zsh-completions
-
-## Zsh-System-Clipboard
-### Better clipboad Intergration
-_zplug_load kutsan zsh-system-clipboard
 
 ## Zsh-History-Substring-Search
 ### search for previous comands in the terminal
@@ -55,3 +51,7 @@ _zplug_load MichaelAquilina zsh-you-should-use
 ## Fast-Syntax-Highlighting
 ### Colors typed txt so output looks better
 _zplug_load zdharma-continuum fast-syntax-highlighting
+
+## Zsh-System-Clipboard
+### Better clipboad Intergration
+_zplug_load kutsan zsh-system-clipboard
