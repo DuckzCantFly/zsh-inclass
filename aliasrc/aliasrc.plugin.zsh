@@ -12,7 +12,6 @@ alias \
 	mv="mv -iv" \
 	rm="rm -Iv" \
 	bc="bc -ql" \
-	mkd="mkdir -pv" \
 	info="info --vi-keys" \
 
 # Colorize commands when possible.
@@ -22,6 +21,7 @@ alias \
 	ip="ip -color=auto"
 
 # LS / EXA / eza
+## Better ls command
 if [ -x "$(command -v eza)" ] ; then
 	alias \
 		eza="eza --icons -hg --color=auto --group-directories-first" \
@@ -50,8 +50,13 @@ alias \
 	v="$EDITOR" \
 	ipaddr="curl ifconfig.me" \
 	lipaddr='ip address | grep "inet " '\
+	mkd="mkdir -pv" \
 
-# Refresh
+# Shortcuts
 alias \
-	szrc="source ${XDG_CONFIG_HOME:-$HOME/.config}/zsh/.zshrc \
-		; source $HOME/.profile" \
+	cfz="e ${HOME}/.zshrc"\
+	cfzp="cd ${ZPLUGINDIR}/zsh-inclass ; ls"\
+
+# Refresh zsh
+alias \
+	szrc="source ${HOME}/.zshrc ; source $HOME/.profile" \
