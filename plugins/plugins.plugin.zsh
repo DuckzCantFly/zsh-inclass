@@ -42,7 +42,7 @@ _zplug_load MichaelAquilina zsh-you-should-use
 	YSU_ARROW="->"
 
 	# YSU msg
-	export YSU_MESSAGE_FORMAT="${YSU_ERROR} ${YSU_FIX} ${YSU_ARROW}"
+	export YSU_MESSAGE_FORMAT="${YSU_ERROR} ${YSU_ARROW} ${YSU_FIX}"
 
 	export YSU_IGNORED_ALIASES=(
 	) # Disaable on commands
