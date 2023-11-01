@@ -20,6 +20,9 @@ source ${ZPLUGINDIR}/zsh-inclass/correction/correction.plugin.zsh
 # Load all Plugins
 source ${ZPLUGINDIR}/zsh-inclass/plugins/plugins.plugin.zsh
 
+# Prompt I use 
+source ${ZPLUGINDIR}/zsh-inclass/prompt/prompt.plugin.zsh
+
 # Powerline10k
 ## pretty prompt
 if [ ! -d ${ZPLUGINDIR}/powerlevel10k ]; then
@@ -27,9 +30,6 @@ if [ ! -d ${ZPLUGINDIR}/powerlevel10k ]; then
 fi
 
 # source ${ZPLUGINDIR}/powerlevel10k/powerlevel10k.zsh-theme
-
-# Prompt I use 
-source ${ZPLUGINDIR}/zsh-inclass/prompt/prompt.plugin.zsh
 
 # Enable vi-mode with enhancements
 # source ${ZPLUGINDIR}/zsh-inclass/vi-mode/vi-mode.plugin.zsh
