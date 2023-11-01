@@ -193,6 +193,12 @@ source ${ZPLUGINDIR}/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ${ZDOTDIR:-${HOME}}/.p10k.zsh ]] || source ${ZDOTDIR:-${HOME}}/.p10k.zsh
 ```
 
+(optional) move default .p10.zsh to ZDOTDIR
+
+```bash
+cp .p10k.zsh $ZDOTDIR/.p10k.zsh
+```
+
 close and open zsh
 
 ```bash
@@ -203,7 +209,7 @@ exit
 zsh
 ```
 
-setup p10k
+setup p10k if not useing my config
 
 ### Step 9
 
@@ -266,4 +272,4 @@ log out and log back in, zsh should be your new shell, and the new profile file 
 
 ### (Optional) Step 11
 
-check out my repo for cool linux softewhere
+check out my repo for cool linux softewhere!
