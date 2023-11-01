@@ -55,9 +55,9 @@ alias \
 
 # Shortcuts
 alias \
-	cfz="e ${HOME}/.zshrc"\
+	cfz="e ${ZDOTDIR:-$HOME}/.zshrc"\
 	cfzp="cd ${ZPLUGINDIR}/zsh-inclass ; ls"\
 
 # Refresh zsh
 alias \
-	szrc="source ${ZDOTDIR:-HOME}/.zshrc ; source $HOME/.profile" \
+	szrc="source ${ZDOTDIR:-$HOME}/.zshrc ; source $HOME/.profile" \
