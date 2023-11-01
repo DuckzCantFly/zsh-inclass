@@ -139,8 +139,8 @@ Comment out prompt I use line
 # Prompt I use 
 source ${ZPLUGINDIR}/zsh-inclass/prompt/prompt.plugin.zsh
 ```
-\/
-\/
+\\/
+\\/
 ```bash
 # Prompt I use 
 # source ${ZPLUGINDIR}/zsh-inclass/prompt/prompt.plugin.zsh
@@ -160,10 +160,10 @@ fi
 # source ${ZPLUGINDIR}/zsh-inclass/vi-mode/vi-mode.plugin.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ${ZDOTDIR:-${HOME}}/.p10k.zsh ]] || source ${ZDOTDIR:-${HOME}}/.p10k.zsh
 ```
-\/
-\/
+\\/
+\\/
 
 ```bash
 # Powerline10k
@@ -178,7 +178,8 @@ source ${ZPLUGINDIR}/powerlevel10k/powerlevel10k.zsh-theme
 # source ${ZPLUGINDIR}/zsh-inclass/vi-mode/vi-mode.plugin.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[[ ! -f ${ZDOTDIR:-${HOME}}/.p10k.zsh ]] || source ${ZDOTDIR:-${HOME}}/.p10k.zsh
 ```
 
 close and open zsh
