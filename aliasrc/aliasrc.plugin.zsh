@@ -21,7 +21,7 @@ alias \
 	diff="diff --color=auto" \
 	ip="ip -color=auto"
 
-# LS / EXA / eza
+# LS / EXA / EZA
 ## Better ls command
 if [ -x "$(command -v eza)" ] ; then
 	alias \
@@ -60,4 +60,4 @@ alias \
 
 # Refresh zsh
 alias \
-	szrc="source ${HOME}/.zshrc ; source $HOME/.profile" \
+	szrc="source ${ZDOTDIR:-HOME}/.zshrc ; source $HOME/.profile" \
