@@ -285,3 +285,4 @@ log out and log back in, zsh should be your new shell, and the new profile file 
 ### (Optional) Step 12
 
 check out my repo for cool linux softewhere!
+[Cool-OSS](https://github.com/DuckzCantFly/Cool-OSS)
