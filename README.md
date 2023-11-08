@@ -255,7 +255,23 @@ test the new alise
 cfzp
 ```
 
-### (Optional) Step 10
+### Step 10
+
+show your editor
+
+```bash
+echo $EDITOR
+```
+
+show your cfzp command
+
+```bash
+which cfzp
+```
+
+Take a screenshot
+
+### (Optional) Step 11
 
 Change your user shell to zsh. 
 
@@ -266,6 +282,6 @@ chsh /usr/bin/zsh
 log out and log back in, zsh should be your new shell, and the new profile file should be loaded by default
 
 
-### (Optional) Step 11
+### (Optional) Step 12
 
 check out my repo for cool linux softewhere!
