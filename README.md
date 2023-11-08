@@ -40,7 +40,7 @@ zsh
 Show default editor
 
 ```bash
-echo $editor
+echo $EDITOR
 ```
 
 Run `e` command to open default editor
