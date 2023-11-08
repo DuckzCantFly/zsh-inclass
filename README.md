@@ -7,7 +7,7 @@ To install this config use.
 Make sure git is installed.
 
 ```bash
-sudo dnf install git nvim fish eza zsh
+sudo dnf install git neovim fish eza zsh
 ```
 
 ### Step 2
