@@ -214,7 +214,7 @@ cat source-all.plugin.zsh
 
 edit the alises file
 ```bash
-e aliserc/aliserc.plugin.zsh
+e aliasrc/aliasrc.plugin.zsh
 ```
 
 change lines
