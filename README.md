@@ -7,7 +7,7 @@ To install this config use.
 Make sure git is installed.
 
 ```bash
-sudo dnf install git nvim fish eza
+sudo dnf install git nvim fish eza zsh
 ```
 
 ### Step 2
@@ -40,10 +40,14 @@ zsh
 Show default editor
 
 ```bash
-echo $EDITOR
+echo $editor
 ```
 
-Run ```e``` command to open default editor
+Run `e` command to open default editor
+
+```bash
+e
+```
 
 ### Step 6
 
@@ -55,7 +59,6 @@ nvim .profile
 
 ```bash
 export EDITOR="nvim"
-export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"
 ```
 
 ### Step 7
@@ -64,18 +67,6 @@ Link .profile to .zprofile
 
 ```bash
 ln .profile $HOME/.zprofile
-```
-
-Link new .zshrc to $ZDOTDIR/.zshrc
-
-```bash
-ln .config/zsh/plugins/zsh-inclass/.zshrc .config/zsh/.zshrc
-```
-
-Delete old .zshrc
-
-```bash
-rm .zshrc
 ```
 
 Exit zsh
@@ -99,12 +90,6 @@ zsh
 
 ### Step 8
 
-move to $ZDOTDIR
-
-```bash
-cd $ZDOTDIR
-```
-
 ```bash
 la
 ```
@@ -124,7 +109,7 @@ exit nvim
 move to plugins dir and list plugins
 
 ```bash
-cd plugins ; ls
+cd .config/zsh/plugins ; ls
 ```
 
 move to zsh-inclass
@@ -157,7 +142,8 @@ source ${ZPLUGINDIR}/zsh-inclass/prompt/prompt.plugin.zsh
 # Prompt I use 
 # source ${ZPLUGINDIR}/zsh-inclass/prompt/prompt.plugin.zsh
 ```
-Un-comment out prompt I use line
+
+Un-comment out prompt the Powerline10k code
 
 ```bash
 # Powerline10k
@@ -193,10 +179,10 @@ source ${ZPLUGINDIR}/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ${ZDOTDIR:-${HOME}}/.p10k.zsh ]] || source ${ZDOTDIR:-${HOME}}/.p10k.zsh
 ```
 
-(optional) move default .p10.zsh to ZDOTDIR
+(optional) move default .p10.zsh to the home folder
 
 ```bash
-cp .p10k.zsh $ZDOTDIR/.p10k.zsh
+cp .p10k.zsh $HOME/.p10k.zsh
 ```
 
 close and open zsh
@@ -209,13 +195,12 @@ exit
 zsh
 ```
 
-setup p10k if not useing my config
-
 ### Step 9
 
 Change some default alises
 
 open the config dir using alise cfzp
+
 
 ```bash
 cfzp
@@ -254,6 +239,16 @@ save file and reload zsh
 szrc
 ```
 
+move to the $HOME dir
+
+```bash
+cd
+```
+
+```bash
+pwd
+```
+
 test the new alise
 
 ```bash
@@ -269,6 +264,7 @@ chsh /usr/bin/zsh
 ```
 
 log out and log back in, zsh should be your new shell, and the new profile file should be loaded by default
+
 
 ### (Optional) Step 11
 
